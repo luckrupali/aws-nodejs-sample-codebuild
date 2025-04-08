@@ -1,3 +1,9 @@
 #!/bin/bash
-cd /home/ec2-user/app
+set -e
+
+echo "✅ Running AFTER INSTALL"
+
+cd /home/ubuntu/myapp
+
+# Install dependencies
 npm install

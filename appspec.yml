@@ -3,12 +3,15 @@ os: linux
 
 files:
   - source: .
-    destination: /home/ec2-user/app
+    destination: /home/ubuntu/myapp
 
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
+      timeout: 300
   AfterInstall:
     - location: scripts/after_install.sh
+      timeout: 300
   ApplicationStart:
     - location: scripts/start_server.sh
+      timeout: 300

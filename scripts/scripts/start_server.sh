@@ -1,3 +1,9 @@
 #!/bin/bash
-cd /home/ec2-user/app
-node app.js > app.out.log 2> app.err.log < /dev/null &
+set -e
+
+echo "🚀 Starting Node.js App"
+
+cd /home/ubuntu/myapp
+
+# Start the Node.js app in background
+nohup node app.js > /dev/null 2>&1 &

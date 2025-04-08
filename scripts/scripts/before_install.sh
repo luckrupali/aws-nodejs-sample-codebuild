@@ -1,3 +1,10 @@
 #!/bin/bash
-echo "Stopping existing Node app..."
-pkill node || echo "Nothing to stop"
+set -e
+
+echo "➡️ Running BEFORE INSTALL"
+
+# Create the app directory if it doesn't exist
+mkdir -p /home/ubuntu/myapp
+
+# Stop any running Node.js process (optional)
+pkill node || true
