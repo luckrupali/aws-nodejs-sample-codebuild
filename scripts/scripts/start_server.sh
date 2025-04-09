@@ -1,9 +1,9 @@
 #!/bin/bash
-set -e
-
-echo "🚀 Starting Node.js App"
-
+echo "✅ [ApplicationStart] Starting Node.js app..."
 cd /home/ubuntu/myapp
 
-# Start the Node.js app in background
-nohup node app.js > /dev/null 2>&1 &
+# Kill any running instance (for demo purposes)
+pkill node || true
+
+# Start app in background
+nohup node app.js > /home/ubuntu/myapp/app.log 2>&1 &

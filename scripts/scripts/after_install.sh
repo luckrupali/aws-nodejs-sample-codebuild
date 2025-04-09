@@ -1,9 +1,4 @@
 #!/bin/bash
-set -e
-
-echo "✅ Running AFTER INSTALL"
-
+echo "✅ [AfterInstall] Installing Node.js dependencies..."
 cd /home/ubuntu/myapp
-
-# Install dependencies
 npm install
