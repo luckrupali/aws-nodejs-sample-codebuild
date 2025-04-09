@@ -15,7 +15,7 @@ hooks:
     - location: scripts/after_install.sh
       timeout: 300
       runas: ubuntu
-    - location: scripts/post_script.sh
+    - location: - location: post_script.sh
       timeout: 300
       runas: ubuntu
 
