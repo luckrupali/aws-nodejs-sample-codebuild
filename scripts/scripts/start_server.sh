@@ -2,8 +2,8 @@
 echo "✅ [ApplicationStart] Starting Node.js app..."
 cd /home/ubuntu/myapp
 
-# Kill any running instance (for demo purposes)
+# Kill any running Node process (optional safety)
 pkill node || true
 
-# Start app in background
-nohup node app.js > /home/ubuntu/myapp/app.log 2>&1 &
+# Start the app in background
+nohup node app.js > app.log 2>&1 &
