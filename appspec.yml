@@ -20,8 +20,3 @@ hooks:
     - location: scripts/scripts/start_server.sh
       timeout: 300
       runas: ubuntu
-
-  AfterAllowTestTraffic:
-    - location: scripts/scripts/post_script.sh
-      timeout: 300
-      runas: ubuntu
